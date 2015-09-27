@@ -12,5 +12,9 @@
 
   <string name="lbl_exit">Exit</string>
   <string name="search_hint">This is da search hint</string>
+    <string name="title_activity_my_cards">MyCardsActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
 
 </resources>
