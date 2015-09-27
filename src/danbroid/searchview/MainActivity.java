@@ -94,13 +94,13 @@ public class MainActivity extends AppCompatActivity {
     });
 
     findViewById(R.id.clear_button).setOnClickListener(
-        new View.OnClickListener() {
-          @Override
-          public void onClick(View v) {
-            log.debug("clearing suggestions");
-            suggestions.clearHistory();
-          }
-        });
+            new View.OnClickListener() {
+              @Override
+              public void onClick(View v) {
+                log.debug("clearing suggestions");
+                suggestions.clearHistory();
+              }
+            });
 
     CheckBox submitEnabled = (CheckBox) findViewById(R.id.submit_enabled_checkbox);
     submitEnabled.setChecked(searchView.isSubmitButtonEnabled());
@@ -108,11 +108,10 @@ public class MainActivity extends AppCompatActivity {
         .setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
           @Override
           public void onCheckedChanged(CompoundButton buttonView,
-              boolean isChecked) {
+                                       boolean isChecked) {
             searchView.setSubmitButtonEnabled(isChecked);
           }
         });
-
   }
 
   @Override
